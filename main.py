@@ -14,7 +14,7 @@ def load_configs():
     parser = argparse.ArgumentParser(
         description='Generator de publicații și subscripții')
 
-    parser.add_argument('--config-path', type=str, default='config.json', help='The path to the configuration JSoN file')
+    parser.add_argument('--config-path', type=str, default='config.json', help='The path to the configuration JSON file')
     args = parser.parse_args()
 
     return Configs(config_path=args.config_path)
