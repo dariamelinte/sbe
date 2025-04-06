@@ -16,8 +16,8 @@ class Configs:
     def __init__(self, config_path):
         self.config_path: str = config_path
 
-        self.pubs: int = 1000
-        self.subs: int = 1000
+        self.pubs: int = random.randint(1000, 1500)
+        self.subs: int = random.randint(1000, 1500)
 
         self.threads: List[int] = [1]
         self.results = 'results'

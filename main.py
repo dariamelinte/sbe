@@ -33,5 +33,5 @@ def main(iteration):
 
 
 if __name__ == "__main__":
-    for index in range(1, 50001):
+    for index in range(677, 100001):
         main(index)
