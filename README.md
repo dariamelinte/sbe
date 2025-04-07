@@ -49,20 +49,39 @@ Generatiile de la 677-10065:
 
 ## Rezultate testare (timp execuție) - generarea 678:
 
-- Număr publicații: 1477
-- Număr subscriptii: 1313
+- Număr publicații: 1313
+- Număr subscriptii: 1477
 
-- City_config_percentage: 0,81
+- city_config_percentage: 0,81
 - city_actual_percentage	0,811
 
 | Threads | Timp generare (sec) |
 |---------|---------------------|
 | 1       | 0,175 sec           |
-| 2       | 1,1151 sec          |
+| 2       | 0,1151 sec          |
 | 3       | 0,0949 sec          |
 | 4       | 0,0944 sec          |
 | 5       | 0,083 sec           |
 | 6       | 0,0963 sec          |
+
+---
+
+## Rezultate testare (timp execuție) - generarea 2358:
+
+- Număr publicații: 1245
+- Număr subscriptii: 1202
+
+- wind_config_percentage: 0
+- wind_actual_percentage	0,1852
+
+| Threads | Timp generare (sec) |
+|---------|---------------------|
+| 1       | 0,1881 sec          |
+| 2       | 0,1538 sec          |
+| 3       | 0,0941 sec          |
+| 4       | 0,0983 sec          |
+| 5       | 0,1021 sec          |
+| 6       | 0,07 sec            |
 
 ---
 
