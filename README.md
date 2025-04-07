@@ -20,6 +20,8 @@ Hint: NU se recomanda utilizarea distributiei random in obtinerea procentelor ce
 
 ```
 sbe/
+├── data                        # Folder cu datele obtinute in urma rularilor
+├── docs                        # Folder cu pagina html catre statistici
 ├── .gitignore                  # Fișier pentru ignorarea inserarii rezultatelor pe git
 ├── __init__.py                 # Fisier generat 
 ├── config.json                 # Fisier de configuratie pentru generarea publicatiilor si subscriptiilor
@@ -33,22 +35,31 @@ sbe/
 
 ## Parametri de test
 
+Generatiile de la 1-676:
 - Număr publicații: 1000
 - Număr subscriptii: 1000
-- Threaduri: 1, 2, 3, 4, 5, 6, 8
+- Threaduri: 1, 2, 3, 5, 8
+  
+Generatiile de la 677-10065:
+- Număr minim publicații: 1000
+- Număr minim subscriptii: 1000
+- Threaduri: 1, 2, 3, 4, 5, 6
 
 ---
 
-## Rezultate testare (timp execuție)
+## Rezultate testare (timp execuție) - generarea 678:
+
+- Număr publicații: 1477
+- Număr subscriptii: 1313
 
 | Threads | Timp generare (sec) |
 |---------|---------------------|
-| 1       | X.XX                |
-| 2       | X.XX                |
-| 3       | X.XX                |
-| 4       | X.XX                |
-| 5       | X.XX                |
-| 8       | X.XX                |
+| 1       | 0,175 sec           |
+| 2       | 1,1151 sec          |
+| 3       | 0,0949 sec          |
+| 4       | 0,0944 sec          |
+| 5       | 0,083 sec           |
+| 6       | 0,0963 sec          |
 
 ---
 
@@ -61,10 +72,12 @@ sbe/
 
 ## 📊 Evaluare Automată
 
-Statisticile sunt salvate în ``:
-- Număr de publicații livrate: 1000
-- Latență medie
+Statisticile sunt salvate în folderul `data`:
+- Generatiile de la 677-10065;
+- Număr de publicații si subscripti dupa configuratie;
 - Durata totală
+- Durata per fiecare thread
+- Ponderile asteptate si calculate
 
 ---
 
