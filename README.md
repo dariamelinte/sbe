@@ -52,6 +52,9 @@ Generatiile de la 677-10065:
 - Număr publicații: 1477
 - Număr subscriptii: 1313
 
+- City_config_percentage: 0,81
+- city_actual_percentage	0,811
+
 | Threads | Timp generare (sec) |
 |---------|---------------------|
 | 1       | 0,175 sec           |
