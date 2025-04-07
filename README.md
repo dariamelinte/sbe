@@ -34,15 +34,13 @@ sbe/
 ---
 
 ## Parametri de test
+- Număr minim publicații: 1000
+- Număr minim subscriptii: 1000
 
 Generatiile de la 1-676:
-- Număr publicații: 1000
-- Număr subscriptii: 1000
 - Threaduri: 1, 2, 3, 5, 8
   
 Generatiile de la 677-10065:
-- Număr minim publicații: 1000
-- Număr minim subscriptii: 1000
 - Threaduri: 1, 2, 3, 4, 5, 6
 
 ---
