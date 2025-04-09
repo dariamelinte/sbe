@@ -20,7 +20,7 @@ Hint: NU se recomanda utilizarea distributiei random in obtinerea procentelor ce
 
 ```
 sbe/
-├── data                        # Folder cu datele obtinute in urma rularilor
+├── data                        # Folder cu datele procesate in urma rularilor
 ├── docs                        # Folder cu pagina html catre statistici
 ├── .gitignore                  # Fișier pentru ignorarea inserarii rezultatelor pe git
 ├── __init__.py                 # Fisier generat 
@@ -49,11 +49,18 @@ Generatiile de la 677-10065:
 
 - Număr publicații: 1313
 - Număr subscriptii: 1477
+- Configurare:
+```json
+"freq_fields": {
+      "city": 0.43,
+      "created_at": 0.75
+    },
+    "freq_eq": {
+      "city": 0.81
+    }
+```
 
-- city_config_percentage: 0,81
-- city_actual_percentage	0,811
-
-| Threads | Timp generare (sec) |
+| Threads | Timp generare (sec) | 
 |---------|---------------------|
 | 1       | 0,175 sec           |
 | 2       | 0,1151 sec          |
@@ -68,9 +75,18 @@ Generatiile de la 677-10065:
 
 - Număr publicații: 1245
 - Număr subscriptii: 1202
-
-- wind_config_percentage: 0
-- wind_actual_percentage	0,1852
+- Configurare:
+```json
+"freq_fields": {
+      "temperature": 0.07,
+      "created_at": 0.8,
+      "wind": 0.09,
+      "rain": 0.83
+    },
+    "freq_eq": {
+      "rain": 0.59
+    }
+```
 
 | Threads | Timp generare (sec) |
 |---------|---------------------|
@@ -92,12 +108,14 @@ Generatiile de la 677-10065:
 
 ## 📊 Evaluare Automată
 
-Statisticile sunt salvate în folderul `data`:
+Datele sunt salvate în arhiva din [drive-ul](https://drive.google.com/drive/u/2/folders/1IURc2Qpr0uEo932Ua444hr_aa-R9Hu5s):
 - Generatiile de la 677-10065;
 - Număr de publicații si subscripti dupa configuratie;
 - Durata totală
 - Durata per fiecare thread
 - Ponderile asteptate si calculate
+
+Statistici pot fi accesate și live [aici](https://dariamelinte.github.io/sbe/threads_analysis_dashboard.html) pentru rularile intre 677 și 4000.
 
 ---
 
